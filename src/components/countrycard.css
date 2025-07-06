@@ -1,0 +1,102 @@
+.country-card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+}
+
+.country-flag {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.country-name {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.country-info {
+    padding: 0 15px 15px;
+    color: #ccc;
+}
+
+.country-info p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+} 
+
+.visited-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.visited-button.visited {
+    background-color: #2E7D32;
+    cursor: default;
+}
+
+.visited-button:disabled {
+    opacity: 0.7;
+    cursor: default;
+}
+
+.visited-button.remove {
+    background-color: #d32f2f;
+    width: 100%;
+    margin-right: 0;
+}
+
+.visited-button.remove:hover {
+    background-color: #b71c1c;
+}
+
+.wishlist-button {   
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wishlist-button.wishlisted {
+    background-color: #1565C0;
+    cursor: default;
+}
+
+.wishlist-button:disabled {
+    opacity: 0.7;
+    cursor: default;
+}
+
+.wishlist-button.remove {
+    background-color: #d32f2f;
+    width: 100%;
+}
+
+.wishlist-button.remove:hover {
+    background-color: #b71c1c;
+}
+
+.search-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
