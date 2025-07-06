@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/navbar'
 import Countries from './components/countries'
@@ -47,3 +48,21 @@ function App() {
 }
 
 export default App
+=======
+import { UserProvider } from './context/UserContext'
+import LoginForm from './components/LoginForm'
+import Profile from './components/Profile'
+
+function App() {
+  return (
+    <UserProvider>
+      <div className="App">
+        <LoginForm />
+        <Profile />
+      </div>
+    </UserProvider>
+  )
+}
+
+export default App 
+>>>>>>> a35efe1d52c366b27d9da08ba978c3afd7c675da
